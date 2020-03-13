@@ -38,6 +38,12 @@ Results:
 Linear Model R2: 0.988<br>
 RFR Model R2: 0.986
 
+The train test split was done by years:<br>
+X_train data was from 2009 to 2015<br>
+y_train data was from 2010 to 2016 <br>
+X_test was the year 2016<br>
+y_test was the year 2017
+
 ## Technologies
 <p align="center">
   <img src="images/logos.png">
