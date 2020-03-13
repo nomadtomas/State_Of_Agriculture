@@ -1,4 +1,4 @@
-# State_Of_Agriculture
+# State Of Agriculture
 Agriculture has such broad economic, technological, and political implications.  President Lincoln not only established the Department of Agriculture in 1862, he referred to it as the “people’s department”.  It is precisely the people that represent this sector that this study will focus.  The scope of the analysis is focusing on five row-crops (corn, wheat, soybeans, cotton, and hay) given that they account for roughly 90 percent of harvest acreage in the US.  Along with this analysis I will be utilizing a linear regression and random forest models to try to predict end-of-year production for the row crop commodities.    
 
 ## Table of Contents
@@ -7,6 +7,10 @@ Agriculture has such broad economic, technological, and political implications. 
 * [Exploratory Data Aanalysis (EDA)](#eda)
 * [Data Sources](#data-sources)
 * [Machine Learning Models](#ml-models)
+* [Technologies](#technologies)
+    * [Database](#database)
+    * [Python](#python)
+    * [Visualization](#visualization)
 * [Conclusion](#conclusion)
 
   
@@ -19,5 +23,17 @@ The main data source I will be using will be from the National Agricultural Stat
 ## EDA:
 
 ## ML-models:
+
+## Technologies
+<p align="center">
+  <img src="images/logos.png">
+</p>
+
+###### Database:
+Data Storage: PostgresSQL<br>
+Other: Docker 
+
+###### Python:
+Data Analysis: Python 3, Numpy, Pandas, Matplotlib, SqlAlchemy, Scikit-Learn<br>
 
 ## Conclusion:

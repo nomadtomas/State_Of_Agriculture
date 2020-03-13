@@ -1,0 +1,105 @@
+CREATE TABLE corn (
+   	id serial NOT NULL PRIMARY KEY,
+   	Year integer,
+  	Geo_level VARCHAR (20),
+	State VARCHAR (40),
+	State_ANSI integer,
+	Ag_District VARCHAR (50),
+	Ag_District_Code integer,
+	County VARCHAR (80),
+	Commodity VARCHAR (80),
+	Data_Item VARCHAR (120),
+	Value float,
+	fips VARCHAR (10)
+);
+
+
+CREATE TABLE cotton (
+   	id serial NOT NULL PRIMARY KEY,
+   	Year integer,
+  	Geo_level VARCHAR (20),
+	State VARCHAR (40),
+	State_ANSI integer,
+	Ag_District VARCHAR (50),
+	Ag_District_Code integer,
+	County VARCHAR (80),
+	Commodity VARCHAR (80),
+	Data_Item VARCHAR (120),
+	Value float,
+	fips VARCHAR (10)
+);
+
+
+
+CREATE TABLE soybean (
+   	id serial NOT NULL PRIMARY KEY,
+   	Year integer,
+  	Geo_level VARCHAR (20),
+	State VARCHAR (40),
+	State_ANSI integer,
+	Ag_District VARCHAR (50),
+	Ag_District_Code integer,
+	County VARCHAR (80),
+	Commodity VARCHAR (80),
+	Data_Item VARCHAR (120),
+	Value float,
+	fips VARCHAR (10)
+);
+
+
+CREATE TABLE winter_wheat (
+   	id serial NOT NULL PRIMARY KEY,
+   	Year integer,
+  	Geo_level VARCHAR (20),
+	State VARCHAR (40),
+	State_ANSI integer,
+	Ag_District VARCHAR (50),
+	Ag_District_Code integer,
+	County VARCHAR (80),
+	Commodity VARCHAR (80),
+	Data_Item VARCHAR (120),
+	Value float,
+	fips VARCHAR (10)
+);
+
+
+CREATE TABLE hay_aft (
+   	id serial NOT NULL PRIMARY KEY,
+   	Year integer,
+  	Geo_level VARCHAR (20),
+	State VARCHAR (40),
+	State_ANSI integer,
+	Ag_District VARCHAR (50),
+	Ag_District_Code integer,
+	County VARCHAR (80),
+	Commodity VARCHAR (80),
+	Data_Item VARCHAR (120),
+	Value float,
+	fips VARCHAR (10)
+);
+
+
+CREATE TABLE state_num (
+   	id serial NOT NULL PRIMARY KEY,
+   	program VARCHAR (20),
+	year integer,
+  	geo_level VARCHAR (20),
+	state VARCHAR (40),
+	commodity VARCHAR (80),
+	data_item VARCHAR (120),
+	domain VARCHAR (60),
+	domain_category VARCHAR (100),
+	value float
+);
+
+
+SELECT cn.year, cn.county, cn.data_item, ct.data_item, 
+cn.value AS cn_plt_ac, ct.value AS ct_plt_ac
+FROM
+(SELECT * FROM corn 
+WHERE data_item = 'CORN - ACRES PLANTED') as cn
+FULL OUTER JOIN 
+(SELECT * FROM cotton 
+WHERE data_item = 'COTTON, UPLAND - ACRES PLANTED') as ct
+ON cn.state = ct.state AND cn.county = ct.county AND cn.year = ct.year
+ORDER BY cn.county, cn.year DESC;
