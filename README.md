@@ -34,10 +34,9 @@ Predicting future planted acres by USDA-NASS was divided into multiple steps.  O
 ## ML-models:
 Two models were used for this analysis.  Linear Regression and Random Forest Regressor.
 Results:
------------------------
-Linear Model R2: 0.988
+
+Linear Model R2: 0.988<br>
 RFR Model R2: 0.986
------------------------
 
 ## Technologies
 <p align="center">
