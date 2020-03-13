@@ -22,13 +22,13 @@ The main data source I will be using will be from the National Agricultural Stat
 
 ## EDA:
 <p align="center">
-  <img src="../images/corn19.png">
+  <img src="images/corn19.png">
 </p>  
 
 Predicting future planted acres by USDA-NASS was divided into multiple steps.  One was by summing all state level numbers to get the national total, the other was by summing all county numbers to get the national total.  Through EDA; however, it was found that those two methods do not equal each other, even though they should. 
 
 <p align="center">
-  <img src="../images/national_ww_plt_ac.png">
+  <img src="images/national_ww_plt_ac.png">
 </p> 
 
 ## ML-models:
