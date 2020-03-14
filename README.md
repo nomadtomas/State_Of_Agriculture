@@ -1,5 +1,5 @@
 # State Of Agriculture
-Agriculture has such broad economic, technological, and political implications.  President Lincoln not only established the Department of Agriculture in 1862, he referred to it as the “people’s department”.  It is precisely the people that represent this sector that this study will focus.  The scope of the analysis is focusing on five row-crops (corn, wheat, soybeans, cotton, and hay) given that they account for roughly 90 percent of harvest acreage in the US.  Along with this analysis I will be utilizing a linear regression and random forest models to try to predict end-of-year production for the row crop commodities.    
+Agriculture has such broad economic, technological, and political implications.  President Lincoln not only established the Department of Agriculture in 1862, he referred to it as the “people’s department”.  It is precisely the people that represent this sector that this study will focus.  The scope of the analysis is focusing on five row-crops (corn, wheat, soybeans, cotton, and hay) given that they account for roughly 90 percent of harvest acreage in the US.  Along with this analysis I will be utilizing a linear regression and random forest models to try to predict end-of-year planted acres for the row crop commodities.    
 <p align="center">
   <img src="images/total_acres.png" width=70%>
 </p> 
