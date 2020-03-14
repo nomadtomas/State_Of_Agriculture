@@ -47,9 +47,11 @@ y_train data was from 2010 to 2016 <br>
 X_test was the year 2016<br>
 y_test was the year 2017
 
+Though a random forest model, be that a classifier or regressor can be a great starting point if the data is not known to be linear. It will be beaten out by a linear model for linear relational data. In this process I applied multiple hyper-parameter tuning for the random forest regressor, but given that the linear model out performs it, it is best to continue to use a linear model to predict future planted acres.
+
 ## Technologies
 <p align="center">
-  <img src="images/logos.png">
+  <img src="images/libraries.png">
 </p>
 
 ###### Database:
@@ -60,3 +62,4 @@ Other: Docker
 Data Analysis: Python 3, Numpy, Pandas, Matplotlib, SqlAlchemy, Scikit-Learn<br>
 
 ## Conclusion:
+Being able to predict planted acres is the first step at ultimately predicting production of any commodity.  This model can be improved by incorporating current year data.  NASS provides multiple estimates throughout the growing season of how production is fluctuating.  This model does not take into account any current year data, only previous years to predict the following year.  By combining the March Ag numbers to the model, an even better end-of-year number can be achieved.  Feel free to contact me for any questions regarding this or any other project on my github at tomas.resendiz@icloud.com. 
